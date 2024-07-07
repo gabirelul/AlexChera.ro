@@ -1,0 +1,61 @@
+@import 'variables';
+
+body,
+div,
+span,
+input,
+a,
+img,
+ul,
+ol,
+summary {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0 none;
+    border: 0 none;
+    list-style: none;
+}
+
+body {
+    margin: $header-height 0 0 0;
+    padding: 1rem 1rem 0;
+    background-color: $body-color;
+
+    main {
+        padding-top: 2rem;
+
+        #index-grid {
+            display: grid;
+            grid-gap: $grid-gap;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "section-1 section-1 section-1 section-1"
+                "section-2 section-2 section-2 section-2"
+                "section-3 section-3 section-3 section-3"
+                "section-4 section-4 section-4 section-4";
+
+            &>* {
+                background-color: red;
+            }
+
+            #section-1 {
+                grid-area: section-1;
+            }
+
+            #section-2 {
+                grid-area: section-2;
+            }
+
+            #section-3 {
+                grid-area: section-3;
+            }
+
+            #section-4 {
+                grid-area: section-4;
+            }
+
+
+        }
+    }
+}

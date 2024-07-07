@@ -1,0 +1,19 @@
+{
+  "name": "alexchera",
+  "version": "1.0.0",
+  "description": "Portofoliu",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Gabirelul",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-icons": "^1.11.3",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "sass": "^1.77.6",
+    "sharp": "^0.33.4"
+  }
+}

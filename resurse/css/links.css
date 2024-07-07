@@ -1,0 +1,57 @@
+.links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  font-family: "Space Grotesk", sans-serif;
+}
+.links .links-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  margin: 1rem 0;
+}
+.links .links-1 .links-heading {
+  padding: 0;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+.links .links-1 hr#under {
+  border: 0;
+  margin: -1em 0;
+  width: 50px;
+  border-bottom: 2px solid var(--text-color);
+}
+.links .link-2 {
+  border: 1px solid #221d21;
+  height: 3em;
+  width: 16em;
+  color: #221d21;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 50px;
+}
+.links .link-2 .link-name {
+  color: #221d21;
+  font-size: 1em;
+}
+.links .link-2 i {
+  font-size: 1.3em;
+}
+.links .link-2 .bx-right-arrow-alt {
+  transition: transform 0.3s ease-in-out;
+}
+.links .link-2:hover .bx-right-arrow-alt {
+  transform: translateX(5px);
+}
+.links .link-2 .linkLeft {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}

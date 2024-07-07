@@ -1,0 +1,68 @@
+@import 'variables';
+
+.links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    font-family: $body-font;
+
+    .links-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+        margin: 1rem 0;
+
+        .links-heading {
+            padding: 0;
+            margin: 0;
+            font-size: $big-font-size;
+            font-weight: $font-medium;
+        }
+
+        hr#under {
+            border: 0;
+            margin: -1em 0;
+            width: 50px;
+            border-bottom: 2px solid var(--text-color);
+        }
+    }
+
+    .link-2 {
+        border: 1px solid $dark;
+        height: 3em;
+        width: 16em;
+        color: $dark;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1em;
+        border-radius: 50px;
+
+        .link-name {
+            color: $dark;
+            font-size: 1em;
+        }
+
+        i {
+            font-size: 1.3em;
+        }
+
+        .bx-right-arrow-alt {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover .bx-right-arrow-alt {
+            transform: translateX(5px);
+        }
+
+        .linkLeft {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+    }
+}

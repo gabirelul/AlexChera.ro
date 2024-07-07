@@ -1,0 +1,46 @@
+body,
+div,
+span,
+input,
+a,
+img,
+ul,
+ol,
+summary {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0 none;
+  border: 0 none;
+  list-style: none;
+}
+
+body {
+  margin: 3.5rem 0 0 0;
+  padding: 1rem 1rem 0;
+  background-color: #EFEEEE;
+}
+body main {
+  padding-top: 2rem;
+}
+body main #index-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "section-1 section-1 section-1 section-1" "section-2 section-2 section-2 section-2" "section-3 section-3 section-3 section-3" "section-4 section-4 section-4 section-4";
+}
+body main #index-grid > * {
+  background-color: red;
+}
+body main #index-grid #section-1 {
+  grid-area: section-1;
+}
+body main #index-grid #section-2 {
+  grid-area: section-2;
+}
+body main #index-grid #section-3 {
+  grid-area: section-3;
+}
+body main #index-grid #section-4 {
+  grid-area: section-4;
+}
