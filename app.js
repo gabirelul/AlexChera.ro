@@ -32,7 +32,7 @@ app.get(["/links"], function (req, res) {
 });
 
 function compileazaScss(caleScss, caleCss) {
-    console.log("cale:", caleCss);
+    // console.log("cale:", caleCss);
     if (!caleCss) {
 
         let numeFisExt = path.basename(caleScss);
@@ -58,7 +58,7 @@ for (let numeFis of vFisiere) {
 }
 
 fs.watch(obGlobal.folderScss, function (eveniment, numeFis) {
-    console.log(eveniment, numeFis);
+    //console.log(eveniment, numeFis);
     if (eveniment == "change" || eveniment == "rename") {
         let caleCompleta = path.join(obGlobal.folderScss, numeFis);
         if (fs.existsSync(caleCompleta)) {
